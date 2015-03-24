@@ -1,0 +1,2 @@
+module VoicemsgsHelper
+end

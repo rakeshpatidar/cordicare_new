@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Physician:</strong>
+  <%= @voicemsg.physician %>
+</p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @voicemsg.patient_id %>
+</p>
+
+<p>
+  <strong>Voice:</strong>
+  <%= @voicemsg.voice %>
+</p>
+
+<%= link_to 'Edit', edit_voicemsg_path(@voicemsg) %> |
+<%= link_to 'Back', voicemsgs_path %>

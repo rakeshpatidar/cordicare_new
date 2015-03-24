@@ -1,0 +1,12 @@
+	<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h3>Hello, <%= @user.name %>! </h3>
+    <p>Your profile is created successfully. </p>
+    <p>User Name : <%= @user.email %></p>
+    <p>User Pass : http://infinite-depths-5848.herokuapp.com/<%= link_to "Get your password", new_doctor_password_path %></p>
+  </body>
+</html>

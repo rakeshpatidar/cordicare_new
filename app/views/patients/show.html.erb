@@ -1,0 +1,63 @@
+<%= render 'layouts/head_content' %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First Name:</strong>
+  <%= @patient.first_name %>
+</p>
+
+<p>
+  <strong>Last Name:</strong>
+  <%= @patient.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @patient.email %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @patient.gender %>
+</p>
+
+<p>
+  <strong>MI:</strong>
+  <%= @patient.mi %>
+</p>
+
+<p>
+  <strong>Date-of-birth:</strong>
+  <%= @patient.date_of_birth %>
+</p>
+
+<p>
+  <strong>Contact-no:</strong>
+  <%= @patient.contact_no %>
+</p>
+
+<p>
+  <strong>Billing ID:</strong>
+  <%= @patient.billing_id %>
+</p>
+<p>
+  <strong>Physician:</strong>
+  <%= @patient.physician %>
+</p>
+
+<h2>Disease</h2>
+<% @patient.patientdiseases.each do |patientdisease| %>
+  <p>
+    <strong>Code:</strong>
+    <%= patientdisease.code %>
+  </p>
+ 
+  <p>
+    <strong>Disease:</strong>
+    <%= patientdisease.disease %>
+  </p>
+<% end %>
+
+<%= link_to 'Edit', edit_patient_path(@patient) %> |
+<%= link_to 'Back', patients_path %>
+<%= render 'layouts/footer_content' %>

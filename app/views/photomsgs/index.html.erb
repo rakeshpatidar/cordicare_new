@@ -1,0 +1,20 @@
+<h1>Listing photomsg</h1>
+ 
+<table>
+  <tr>
+    <th>Physician</th>
+    <th>Patient</th>
+    <th>Image</th>
+  </tr>
+ 
+  <% @photomsgs.each do |photomsg| %>
+    <tr>
+      <td><%= photomsg.physician %></td>
+      <td><%= photomsg.patient_id %></td>
+     <td><%= image_tag photomsg.image.url %></td>
+       <td></td>
+  
+    </tr>
+  <% end %>
+</table>
+
